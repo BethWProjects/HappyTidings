@@ -27,3 +27,17 @@ img {
     padding: 10px;
 }
 
+.tagline {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.publish-btn {
+    width: 317px;
+    height: 61px;
+    border-radius: 8px;
+    background: #28A9F1;
+}
+
