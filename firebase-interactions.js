@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
       let currentItem = itemsArray[i];
       let currentItemID = currentItem[0];
       let currentIDValue = currentItem[1];
-      appendItemToShoppingListEl(currentIDValue);
+      appendItemToShoppingListEl(currentItem);
     }
   });
 
@@ -58,7 +58,12 @@ window.addEventListener("DOMContentLoaded", () => {
     inputEl.value = "";
   }
 
-  function appendItemToShoppingListEl(itemValue) {
-    commentsListEl.innerHTML += `<li id="list-items">${itemValue}</li>`;
+  function appendItemToShoppingListEl(item) {
+    let itemID = item[0];
+    let itemValue = item[1];
+
+    let newComment = document.createElement("li");
+    newComment.textContent = itemValue;
+    commentsListEl.append(newComment);
   }
 });
