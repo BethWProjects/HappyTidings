@@ -81,7 +81,7 @@ ul {
     padding: 0;
 }
 
-.listed-messages {
+li {
     padding: 10px;
     margin: 10px;
     list-style-type: none;
