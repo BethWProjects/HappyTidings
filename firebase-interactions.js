@@ -59,6 +59,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   function appendItemToShoppingListEl(itemValue) {
-    commentsListEl.innerHTML += `<li>${itemValue}</li>`;
+    commentsListEl.innerHTML += `<li id="list-items">${itemValue}</li>`;
   }
 });
