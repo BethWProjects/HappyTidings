@@ -28,7 +28,7 @@ img {
     text-shadow: 0 0 1px rgb(19, 3, 139);
 }
 
-.input-main {
+#input-main {
     width: 287px;
     height: 88px;
     border-radius: 8px;
@@ -38,7 +38,7 @@ img {
     margin-bottom: 13px;
 }
 
-.input-main::placeholder {
+#input-main::placeholder {
     font-size: 1rem;
     font-weight: 700;
     color: #000000;
@@ -60,7 +60,7 @@ img {
     text-shadow: 0 0 1px rgb(199, 121, 4);
 }
 
-.publish-btn {
+#publish-btn {
     width: 287px;
     height: 61px;
     border-radius: 8px;
