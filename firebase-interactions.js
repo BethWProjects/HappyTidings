@@ -6,6 +6,7 @@ import {
   ref,
   push,
   onValue,
+  remove,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
 
 // Your web app's Firebase configuration
@@ -46,7 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
       let currentItem = itemsArray[i];
       let currentItemID = currentItem[0];
       let currentIDValue = currentItem[1];
-      appendItemToShoppingListEl(currentItem);
+      appendCommentToListEl(currentItem);
     }
   });
 
@@ -58,12 +59,18 @@ window.addEventListener("DOMContentLoaded", () => {
     inputEl.value = "";
   }
 
-  function appendItemToShoppingListEl(item) {
+  function appendCommentToListEl(item) {
     let itemID = item[0];
     let itemValue = item[1];
 
     let newComment = document.createElement("li");
+
     newComment.textContent = itemValue;
+
+    newComment.addEventListener("dblclick", () => { 
+        remove(ref(database, `comments/${itemID}`))
+    })
+
     commentsListEl.append(newComment);
   }
 });

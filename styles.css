@@ -95,3 +95,9 @@ li {
     font-weight: 400;
     line-height: normal;
 }
+
+li:hover {
+    background: #f5dd90;
+    color: #1B1924;
+    cursor: pointer;
+}
