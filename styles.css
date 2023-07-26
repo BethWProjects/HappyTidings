@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Raleway', sans-serif;
     background-color: rgb(27, 109, 180);
-
+    user-select: none;
 }
 
 .main-section {
