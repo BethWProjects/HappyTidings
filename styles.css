@@ -81,6 +81,11 @@ ul {
     padding: 0;
 }
 
+#comments-list {
+    color: yellow;
+    text-shadow: 0 0 1px BLACK;
+}
+
 li {
     padding: 10px; 
     margin: 13px;
@@ -94,6 +99,7 @@ li {
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
+    text-shadow: none;
 }
 
 li:hover {

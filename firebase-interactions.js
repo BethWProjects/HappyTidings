@@ -41,13 +41,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   onValue(commentsInDB, (snapshot) => {
-    let itemsArray = Object.entries(snapshot.val());
-    clearItemList();
-    for (let i = 0; i < itemsArray.length; i++) {
-      let currentItem = itemsArray[i];
-      let currentItemID = currentItem[0];
-      let currentIDValue = currentItem[1];
-      appendCommentToListEl(currentItem);
+    if (snapshot.exists()) {
+      let itemsArray = Object.entries(snapshot.val());
+      clearItemList();
+      for (let i = 0; i < itemsArray.length; i++) {
+        let currentItem = itemsArray[i];
+        let currentItemID = currentItem[0];
+        let currentIDValue = currentItem[1];
+        appendCommentToListEl(currentItem);
+      }
+    } else {
+      commentsListEl.innerHTML = "No comments currently, please add one!";
     }
   });
 
@@ -67,9 +71,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     newComment.textContent = itemValue;
 
-    newComment.addEventListener("dblclick", () => { 
-        remove(ref(database, `comments/${itemID}`))
-    })
+    newComment.addEventListener("dblclick", () => {
+      remove(ref(database, `comments/${itemID}`));
+    });
 
     commentsListEl.append(newComment);
   }
