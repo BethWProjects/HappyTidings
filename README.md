@@ -5,7 +5,7 @@ In this project, I developed a comments app that enables people to share happy u
 
 ## Deployed Link
 Production link pending...
-[Happy Tidings]()
+[Happy Tidings]() 
 
 Deployed using ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
