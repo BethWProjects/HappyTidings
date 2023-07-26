@@ -4,8 +4,8 @@
 In this project, I developed a comments app that enables people to share happy updates with each other. The app incorporates a database using Firebase, which allows users to add and delete comments using unique identifiers.
 
 ## Deployed Link
-Check out my Happy Tidings project here!
-[Happy Tidings]()
+Production link pending...
+[Happy Tidings]<>()
 
 Deployed using ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
