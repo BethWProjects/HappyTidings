@@ -2,6 +2,7 @@
 
 ## Overview
 In this project, I developed a comments app that enables people to share happy updates with each other and delete the comments on double click. The app incorporates a database using Firebase, which allows users to add and delete comments using unique identifiers.  
+![IMG_5118](https://github.com/BethWProjects/HappyTidings/assets/38263992/9238b6a0-12fc-49ba-bb8a-ae0e27db56f2)
 
 ## Deployed Link
 Production link pending...PLEASE NOTE: to avoid spamming I updated the 'write' rules to false, so the user can only read and view the app currently.  
